@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSIT Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="bg-gray-800 bg-opacity-70 backdrop-blur-lg fixed top-0 w-full z-50 shadow-lg border-b border-gray-700">
+        <nav class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-sm sm:text-base">
+            <div id="portfolio-title" class="text-xl sm:text-2xl font-bold text-white tracking-wide"></div>
+            <ul class="flex space-x-4 sm:space-x-8 mt-2 sm:mt-0">
+                <li><a href="#home" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">About Me</a></li>
+                <li><a href="#journey" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">My Journey</a></li>
+                <li><a href="#projects" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Projects</a></li>
+                <li><a href="#contact" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-8">
+        <section id="home" class="container mx-auto px-4 py-16 text-center min-h-screen flex items-center justify-center">
+            <div>
+                <h1 id="home-title" class="text-3xl sm:text-5xl lg:text-7xl font-bold text-white tracking-wider animate-pulse"></h1>
+                <p id="home-subtitle" class="text-lg sm:text-xl mt-4 font-light text-white-1000"></p>
+                <div class="mt-8">
+                    <a href="#projects" class="inline-block px-8 py-3 bg-cyan-500 text-white font-bold rounded-full transition-all duration-300 hover:scale-105 hover:bg-cyan-600 shadow-md transform hover:shadow-[0_0_20px_rgba(0,255,255,0.7)]">Explore My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto px-4 py-16">
+            <div class="hologram-card p-6 md:p-12 max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-6 tracking-wide">About Me</h2>
+                <p id="about-text" class="text-gray-400 text-lg sm:text-xl font-light leading-relaxed"></p>
+            </div>
+        </section>
+
+        <section id="journey" class="container mx-auto px-4 py-16">
+            <div class="hologram-card p-6 md:p-12 max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-6 tracking-wide">My Journey</h2>
+                <div id="journey-content" class="grid gap-8"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="container mx-auto px-4 py-16">
+            <div class="hologram-card p-6 md:p-12">
+                <h2 class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-8 tracking-wide text-center">Projects</h2>
+                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto px-4 py-16">
+            <div class="hologram-card p-6 md:p-12 max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-6 tracking-wide">Get in Touch</h2>
+                <p class="text-gray-300 mb-8">Feel free to connect with me. Let's talk about tech, projects, or anything in between!</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a id="email-link" href="mailto:imperialjarryl@gmail.com" class="px-6 py-3 bg-cyan-700 text-white rounded-lg transition-all duration-300 hover:scale-105 hover:bg-cyan-800 shadow-md">
+                        <span class="inline-block mr-2 align-middle">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                        </span>
+                        imperialjarryl@gmail.com
+                    </a>
+                    <a id="Facebook" href="https://www.facebook.com/jarrylseth.imperial.14?rdid=Ujl7GDAnuPtkPnZf#" target="_blank" class="px-6 py-3 bg-gray-600 text-white rounded-lg transition-all duration-300 hover:scale-105 hover:bg-gray-700 shadow-md">
+                        <span class="inline-block mr-2 align-middle">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16 8a6 6 0 01-6 6H6a6 6 0 01-6-6V6a6 6 0 016-6h4a6 6 0 016 6v2z"></path>
+                                <path fill-rule="evenodd" d="M19 14a5 5 0 00-5-5H5a5 5 0 00-5 5v2a5 5 0 005 5h9a5 5 0 005-5v-2zM5 14h10a3 3 0 013 3v2a3 3 0 01-3 3H5a3 3 0 01-3-3v-2a3 3 0 013-3z" clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        Facebook Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+    <p>Built by <span class="text-gray-500">Seth</span> | &copy; 2025. Ibaba ang presyo ng pishbol</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
